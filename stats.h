@@ -1,5 +1,5 @@
 
-Struct Stats{
+struct Stats{
   int i;
 };
 
