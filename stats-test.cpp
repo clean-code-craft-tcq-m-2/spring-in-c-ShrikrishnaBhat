@@ -28,8 +28,6 @@ TEST_CASE("average is NaN for empty array") {
 TEST_CASE("raises alerts when max is greater than threshold") {
     // create additional .c and .h files
     // containing the emailAlerter, ledAlerter functions
-    float emailAlerter[] = {99.8, 34.2, 4.5};
-    float ledAlerter[] = {99.8, 34.2, 4.5};
     alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
 
     float numberset[] = {99.8, 34.2, 4.5};
