@@ -7,6 +7,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.max = 0;
     
     (void)setlength;
+    (void)numberset;
 }
 
 int emailAlertCallCount = 0;
