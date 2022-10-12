@@ -1,2 +1,2 @@
-extern int emailAlerter();
-extern int ledAlerter();
+extern void emailAlerter();
+extern void ledAlerter();
