@@ -15,6 +15,6 @@ int main(void)
   alerter_funcptr alerters = &emailAlerter;
   emailAlerter();
   
-  alerter_funcptr alerters = &ledAlerter;
+  //alerter_funcptr alerters = &ledAlerter;
   ledAlerter();
 }
