@@ -13,8 +13,8 @@ void ledAlerter()
 int main(void)
 {
   alerter_funcptr alert = &emailAlerter;
-  emailAlerter(1);
+  emailAlerter();
   
   alerter_funcptr alert = &ledAlerter;
-  ledAlerter(1);
+  ledAlerter();
 }
