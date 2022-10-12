@@ -1,2 +1,4 @@
-void emailAlerter() { }
-void ledAlerter() { }
+#include "Stats.h"
+
+void emailAlerter() { emailAlertCallCount++; }
+void ledAlerter() { ledAlertCallCount++; }
