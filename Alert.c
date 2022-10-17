@@ -4,6 +4,7 @@
 void emailAlerter()
 {
   emailAlertCallCount=1;
+  return emailAlertCallCount;
 }
 void ledAlerter()
 {
