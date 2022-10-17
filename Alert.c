@@ -10,9 +10,3 @@ void ledAlerter()
 {
   ledAlertCallCount=1;
 }
-  /*alerter_funcptr alerters = &emailAlerter;
-  emailAlerter();
-  
-  //alerter_funcptr alerters = &ledAlerter;
-  ledAlerter();*/
-
