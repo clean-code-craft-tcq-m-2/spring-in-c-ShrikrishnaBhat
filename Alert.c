@@ -7,7 +7,7 @@ void emailAlerter()
 {
   cout << "Hello";
   emailAlertCallCount=1;
-  return emailAlertCallCount;
+  return ;
 }
 void ledAlerter()
 {
