@@ -3,6 +3,7 @@
 
 void emailAlerter()
 {
+  cout << "Hello";
   emailAlertCallCount=1;
   return emailAlertCallCount;
 }
