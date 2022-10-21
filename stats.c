@@ -1,4 +1,8 @@
-#include "stats.h"
+#include "math.h"	        
+        
+#include "stats.h"	        
+        
+#include "Alret.h"
 
 struct Stats compute_statistics(const float* numberset, int setlength) {                
     struct Stats s;                
@@ -49,4 +53,24 @@ struct Stats compute_statistics(const float* numberset, int setlength) {    
         return s;                
     }                
                     
+}
+
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[],struct Stats computedStats)                
+{                
+    if (computedStats.max > maxThreshold)                
+    {                
+        if(*alerters==emailAlerter)                
+        {                
+            emailAlerter();                
+        }                
+        if(*alerters==ledAlerter)                
+        {                
+           ledAlerter();                
+        }                
+    }                
+    else                
+    {                
+        emailAlertCallCount = 0;                
+        ledAlertCallCount = 0;                
+    }                                  
 }
