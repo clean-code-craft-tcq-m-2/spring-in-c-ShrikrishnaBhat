@@ -1,13 +1,11 @@
-#include "iostream"
-
 #include "stats.h"
-#include "Alert.h"
-using namespace std;
+
+int emailAlertCallCount = 0;	        
+int ledAlertCallCount = 0;
+
 void emailAlerter()
 {
-  cout << "Hello";
   emailAlertCallCount=1;
-  return ;
 }
 void ledAlerter()
 {
