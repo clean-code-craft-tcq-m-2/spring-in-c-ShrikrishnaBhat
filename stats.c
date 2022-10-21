@@ -3,7 +3,8 @@
 #include "stats.h"
 #include "Alert.h"
 
-struct Stats compute_statistics(const float* numberset, int setlength) {
+struct Stats compute_statistics(const float* numberset, int setlength)
+{
     struct Stats s;
     float sum=0.0, avg=0.0, small=0.0, larger=0.0;
     int i=0;
