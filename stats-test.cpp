@@ -43,7 +43,7 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 //     check_and_alert(maxThreshold, alerters, computedStats);
 //     emailAlertCallCount = 1;
 //     ledAlertCallCount = 1;
-    check_and_alert(maxThreshold, &(alerters[0]), computedStats);                
+    check_and_alert(maxThreshold, &(alerters[0]), computedStats);     
     check_and_alert(maxThreshold, &(alerters[1]), computedStats);
     // need a way to check if both emailAlerter, ledAlerter were called
     // you can define call-counters along with the functions, as shown below
