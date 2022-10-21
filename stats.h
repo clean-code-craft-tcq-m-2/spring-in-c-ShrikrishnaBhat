@@ -1,4 +1,3 @@
-
 struct Stats{
   float average;
   float min;
